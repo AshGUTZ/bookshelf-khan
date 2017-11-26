@@ -27,10 +27,10 @@ var bookAuthor = function(bookAt, bookAx, bookAy) {
     textSize (11);
     text(bookAt, bookAx, bookAy, bookW, titleH);
     };
-    
+
 // BOOK INFORMATION ENTER HERE
 var book = [
-{title: "101 Best Vegan Foods", author: "Some Author", rating: 9},
+{title: "101 Best Vegan Foods", author: "Some Author", rating: 9, color: 'red'},
 {title: "The Outsiders", author: "Some Author 2", rating: 3},
 {title: "Deceptively Delicious", author: "Some Author 3", rating: 2},
 {title: "The Power Of Now", author: "Eckhart Tolle", rating: 5},
@@ -41,7 +41,7 @@ var book = [
 {title: "9", author: "Some Author 9", rating: 9},
 ];
 
-// DRAW BOOKS & SHELVES 
+// DRAW BOOKS & SHELVES
 for (var j = 0; j < 3; j++) {
     for (var k = 0; k < 3; k++) {
         drawBook(k * 121 + 42, j * 112 + 18, bookW, bookH);
@@ -83,6 +83,6 @@ for (var i = 0; i < book.length; i++) {
                     book[i].rating = 5;
                     }
                 }
-            }   
+            }
         }
     }
