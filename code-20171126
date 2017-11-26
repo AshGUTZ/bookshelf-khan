@@ -1,0 +1,24 @@
+var book = [
+    {title: "The 1", author: "A 1", stars: 4},
+    {title: "The 2", author: "A 2", stars: 3},
+    {title: "The 3", author: "A 3", stars: 2},
+    {title: "The 4", author: "A 4", stars: 3},
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+for (var i = 0; i < book.length; i++) {
+    fill(214, 255, 219);
+    rect(40 + i * 115, 20, 90, 100);
+    fill(0, 0, 0);
+    textAlign(CENTER, TOP);
+    textSize(18);
+    text(book[i].title, 43 + i * 115, 29, 70, 100);
+    textSize(14);
+    text(book[i].author, 43 + i * 115, 45, 70, 100);
+    for (var j = 0; j < book[i].stars; j++) {
+    image(getImage("cute/Star"), 44 + j * 16 + i * 115, 90, 20, 30);
+    }
+}
