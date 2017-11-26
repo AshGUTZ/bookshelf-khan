@@ -30,7 +30,7 @@ var bookAuthor = function(bookAt, bookAx, bookAy) {
     
 // BOOK INFORMATION ENTER HERE
 var book = [
-{title: "101 Best Vegan Foods", author: "Some Author", rating: 9, color: red},
+{title: "101 Best Vegan Foods", author: "Some Author", rating: 9},
 {title: "The Outsiders", author: "Some Author 2", rating: 3},
 {title: "Deceptively Delicious", author: "Some Author 3", rating: 2},
 {title: "The Power Of Now", author: "Eckhart Tolle", rating: 5},
